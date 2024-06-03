@@ -19,6 +19,7 @@ public class ArrowDraw : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             clickPosition = Input.mousePosition;
+            arrowImage.gameObject.SetActive(true);
         }
         if (Input.GetMouseButton(0))
         {
@@ -37,6 +38,7 @@ public class ArrowDraw : MonoBehaviour
         }
         if (Input.GetMouseButtonUp(0))
         {
+            arrowImage.gameObject.SetActive(false);
             Vector3 dist = clickPosition - Input.mousePosition;
             Debug.Log(dist);
         }
