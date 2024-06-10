@@ -37,4 +37,5 @@ public class ItemScript : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
 }
