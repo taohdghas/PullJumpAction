@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Stage1ManagerScript : MonoBehaviour
+public class Stage3ManagerScript : MonoBehaviour
 {
     public string nextSceneName;
     public GameObject clearText;
-
     private bool IsCleard = false;
     // Start is called before the first frame update
     void Start()
@@ -18,6 +17,7 @@ public class Stage1ManagerScript : MonoBehaviour
         }
     }
 
+    // Update is called once per frame
     void Update()
     {
         if (IsCleard == true)
@@ -28,7 +28,6 @@ public class Stage1ManagerScript : MonoBehaviour
             }
         }
     }
-
     public void SetCleard()
     {
         IsCleard = true;
